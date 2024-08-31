@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: kafka-streams-demo
+
+kafka:
+  bootstrap-servers: kafka:9092
+
+server:
+  port: 9001
+
+demo:
+  id: demo
+  paymentInboundTopic: "payment-topic"
+  railsFooOutboundTopic : "rails-foo-topic"
+  railsBarOutboundTopic : "rails-bar-topic"
+  salesInboundTopic: "sales-topic"
+  dbStoreOutboundTopic : "db-store-topic"
+  esStoreOutboundTopic: "es-store-topic"
